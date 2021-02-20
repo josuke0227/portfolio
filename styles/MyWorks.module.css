@@ -1,0 +1,96 @@
+.showCase {
+  margin-top: 6vh;
+  height: 50vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 30vw;
+  /* background-color: aqua; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.img {
+  position: absolute;
+  max-width: 100%;
+  animation: mymove 1s infinite;
+  padding: 8px;
+  border: 1px solid;
+}
+
+.card:hover {
+  transform: translateY(-3%);
+  transition: transform 1s;
+}
+
+.pagenationContainer {
+  text-align: center;
+}
+
+.pagenationButton {
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-right: none;
+  padding: 0.25rem 1rem;
+  font-family: "Rajdhani", "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pagenationButtonActive {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-right: none;
+  padding: 0.25rem 1rem;
+  font-family: "Rajdhani", "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.pagenationButton:hover,
+.pagenationButtonActive:hover {
+  text-decoration: none;
+}
+
+.pagenationButton:last-child {
+  border-right: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+  .showCase {
+    margin-top: 0;
+    height: 65vh;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 50vw;
+  }
+
+  .card:nth-child(2) {
+    margin: 0;
+  }
+
+  .pagenationContainer {
+    margin-top: 1rem;
+  }
+}

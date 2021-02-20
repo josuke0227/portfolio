@@ -1,0 +1,73 @@
+.barSizing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 7vh;
+  min-width: 100vw;
+  border-bottom: 1px solid #333;
+  background-color: #fff;
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  z-index: 1;
+}
+
+.col1 {
+  grid-column: 2/6;
+}
+
+.col2 {
+  grid-column: 6/-4;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menuContainer {
+  order: 3;
+  margin-left: auto;
+}
+
+.contentWrapper {
+  flex: 1;
+}
+
+.link {
+  position: relative;
+  color: black;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.link:after {
+  content: "";
+  visibility: hidden;
+  width: -webkit-fill-available;
+  background-color: black;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  right: 0px;
+  transform: scaleX(0);
+}
+
+.link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+  transition: transform 0.5s;
+}
+
+@media only screen and (max-width: 500px) {
+  .barSizing {
+    padding: 2px;
+  }
+
+  .col1 {
+    grid-column: 2/2;
+  }
+  .col2 {
+    grid-column: 4/-2;
+  }
+}

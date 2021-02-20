@@ -1,0 +1,108 @@
+.mainMessage {
+  animation: fadeIn 2s;
+  text-align: center;
+  font-size: 36px;
+  padding: 2rem 1rem 1rem 0;
+  color: white;
+  position: absolute;
+  width: 100%;
+}
+
+.messageSecondary {
+  animation: fadeIn2 3s;
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  margin-top: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 20vh;
+}
+
+.window {
+  padding-top: 8vh;
+  background-image: url("/my-logo.PNG");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+.buttonWrapper {
+  top: 80vh;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.button {
+  padding: 1rem;
+  border: 1px solid white;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  animation: fadeIn3 3.5s;
+}
+
+.button:hover {
+  color: grey;
+  border: 1px solid grey;
+}
+
+.icon {
+  transform: rotate(180deg);
+}
+
+.thisAnchor:hover {
+  text-decoration: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mainMessage {
+    font-size: 24px;
+  }
+
+  .messageSecondary {
+    font-size: 16px;
+  }
+
+  .buttonWrapper {
+    top: 78vh;
+  }
+}

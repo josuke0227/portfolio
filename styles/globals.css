@@ -1,16 +1,62 @@
-html,
-body {
+a {
+  color: #589f73;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+* {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+.tab-small {
+  margin-left: 1rem;
+}
+
+.tab {
+  margin-left: 2rem;
+}
+
+.tab-large {
+  margin-left: 2.5rem;
+}
+
+h1 {
+  margin: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.px-2 {
+  padding: 0 1rem;
+}
+
+.mail-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.mail-button:focus {
+  outline: none;
+}
+
+.with-line-height {
+  line-height: 27px;
 }

@@ -1,0 +1,22 @@
+.common {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  position: relative;
+  padding-top: 7vh;
+}
+
+.lastPage {
+  min-width: 100vw;
+  min-height: 90vh;
+
+  padding-top: 10vh;
+}
+
+.withBackGround {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  padding-top: 10vh;
+  background-image: url("/public/my-logo.PNG");
+}
