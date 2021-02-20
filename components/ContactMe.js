@@ -17,19 +17,19 @@ export default function ContactMe() {
         <h3 className="tab">You can contact me on...</h3>
         <div className={style.contactMethod}>
           <div className={style.rightPart}>
-            <form action="mailto:y.motosugi0227@gmail.com" encType="text/plain">
-              <button
-                type="submit"
-                className="material-icons mail-button"
-                style={{
-                  fontSize: screenWidth < 400 ? "5rem" : "20rem",
-                  border: "none",
-                  background: "none",
-                }}
-              >
-                mail_outline
-              </button>
-            </form>
+            <a
+              href="mailto:y.motosugi0227@gmail.com"
+              encType="text/plain"
+              type="submit"
+              className="material-icons mail-button"
+              style={{
+                fontSize: screenWidth < 400 ? "5rem" : "20rem",
+                border: "none",
+                background: "none",
+              }}
+            >
+              mail_outline
+            </a>
           </div>
           <div className={style.midPart}>
             <h1>OR</h1>
