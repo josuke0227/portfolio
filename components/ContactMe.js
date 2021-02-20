@@ -26,6 +26,8 @@ export default function ContactMe() {
                 fontSize: screenWidth < 400 ? "5rem" : "20rem",
                 border: "none",
                 background: "none",
+                textDecoration: "none",
+                color: "black",
               }}
             >
               mail_outline
