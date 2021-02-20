@@ -34,5 +34,7 @@
 @media only screen and (max-width: 500px) {
   .contactMethod {
     margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
   }
 }

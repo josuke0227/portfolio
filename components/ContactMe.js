@@ -8,7 +8,8 @@ export default function ContactMe() {
   useEffect(() => {
     const currentWidth = document.documentElement.clientWidth;
     setScreenWidth(currentWidth);
-  }, []);
+    console.log(currentWidth);
+  });
 
   return (
     <Container id="contactMe" lastPage>
