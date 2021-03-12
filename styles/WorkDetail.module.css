@@ -1,9 +1,9 @@
 .window {
   height: 80%;
   width: 80%;
-  background-color: white;
+  background-color: var(--white);
   margin: 5.5rem auto;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   padding: 1rem;
   overflow-x: scroll;
 }

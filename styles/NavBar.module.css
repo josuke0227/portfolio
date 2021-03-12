@@ -4,8 +4,8 @@
   right: 0;
   height: 7vh;
   min-width: 100vw;
-  border-bottom: 1px solid #333;
-  background-color: #fff;
+  border-bottom: 1px solid var(--black);
+  background-color: var(--white);
   position: fixed;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -34,7 +34,7 @@
 
 .link {
   position: relative;
-  color: black;
+  color: var(--black);
 }
 
 .link:hover {
@@ -45,7 +45,7 @@
   content: "";
   visibility: hidden;
   width: -webkit-fill-available;
-  background-color: black;
+  background-color: var(--black);
   height: 2px;
   position: absolute;
   bottom: -5px;

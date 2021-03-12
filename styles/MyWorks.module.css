@@ -13,7 +13,6 @@
 
 .card {
   width: 30vw;
-  /* background-color: aqua; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -42,9 +41,9 @@
 }
 
 .pagenationButton {
-  color: black;
+  color: var(--black);
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-right: none;
   padding: 0.25rem 1rem;
   font-family: "Rajdhani", "Times New Roman", Times, serif;
@@ -53,11 +52,15 @@
   cursor: pointer;
 }
 
+.pagenationButton:hover {
+  background-color: var(--light-gray);
+}
+
 .pagenationButtonActive {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   text-decoration: none;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-right: none;
   padding: 0.25rem 1rem;
   font-family: "Rajdhani", "Times New Roman", Times, serif;
@@ -72,7 +75,7 @@
 }
 
 .pagenationButton:last-child {
-  border-right: 1px solid black;
+  border-right: 1px solid var(--black);
 }
 
 @media only screen and (max-width: 500px) {

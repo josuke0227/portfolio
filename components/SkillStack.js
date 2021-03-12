@@ -7,14 +7,14 @@ export default function SkillStack() {
       <div>
         <h2>Skill stack</h2>
         <div className={style.skillStackShowcase}>
-          <img src="/html_logo.svg" width="90" height="90" />
-          <img src="/css_logo.svg" width="90" height="90" />
-          <img src="/javascript_logo.png" width="90" height="90" />
-          <img src="/sass_logo.svg" width="90" height="90" />
-          <img src="/react_logo.svg" width="90" height="90" />
-          <img src="/react_bootstrap_logo.png" width="90" height="90" />
-          <img src="/styled-components_logo.png" width="90" height="90" />
-          <img src="/next_logo.png" width="90" height="90" />
+          <img className={style.square} src="/HTML5_Logo.svg" />
+          <img className={style.squareCss} src="/css_logo.svg" />
+          <img className={style.square} src="/javascript_logo.png" />
+          <img className={style.square} src="/sass_logo.svg" />
+          <img className={style.squareReact} src="/react_logo.svg" />
+          <img className={style.square} src="/react_bootstrap_logo.png" />
+          <img className={style.square} src="/styled-components_logo.png" />
+          <img className={style.square} src="/next_logo.png" />
           <img
             className={style.twoSpans1}
             src="/nodejs_logo.svg"

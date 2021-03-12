@@ -3,7 +3,8 @@
   text-align: center;
   font-size: 36px;
   padding: 2rem 1rem 1rem 0;
-  color: white;
+
+  color: var(--white);
   position: absolute;
   width: 100%;
 }
@@ -12,7 +13,7 @@
   animation: fadeIn2 3s;
   text-align: center;
   font-size: 26px;
-  color: white;
+  color: var(--white);
   margin-top: 1rem;
   position: absolute;
   width: 100%;
@@ -26,7 +27,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   height: 100vh;
-  background-color: black;
+  background-color: var(--black);
   position: relative;
 }
 
@@ -40,16 +41,16 @@
 
 .button {
   padding: 1rem;
-  border: 1px solid white;
-  color: white;
+  border: 1px solid var(--white);
+  color: var(--white);
   display: inline-flex;
   align-items: center;
   animation: fadeIn3 3.5s;
 }
 
 .button:hover {
-  color: grey;
-  border: 1px solid grey;
+  color: var(--gray);
+  border: 1px solid var(--gray);
 }
 
 .icon {

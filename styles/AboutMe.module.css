@@ -19,10 +19,9 @@
 
 .skillStackShowcase {
   grid-gap: 0.5rem;
-  margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: auto;
 }
 
 .skillEvidencies {
@@ -30,15 +29,47 @@
 }
 
 .twoSpans1 {
+  justify-self: center;
+  align-self: center;
   grid-column: 1 / span 2;
+  width: 100%;
+  object-fit: contain;
 }
 
 .twoSpans2 {
+  justify-self: center;
+  align-self: center;
   grid-column: 3 / span 2;
+  width: 100%;
+  object-fit: cover;
 }
 
 .skillText {
   animation: animation 1s;
+}
+
+.square {
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.squareCss {
+  justify-self: center;
+  align-self: center;
+  object-fit: contain;
+  width: 100%;
+  height: 70%;
+}
+
+.squareReact {
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
 }
 
 @keyframes in {
@@ -86,7 +117,7 @@
 }
 
 .button {
-  color: #54d3d1;
+  color: var(--blue);
   border: none;
   background: none;
   cursor: pointer;
