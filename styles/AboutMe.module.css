@@ -12,10 +12,10 @@
   padding: 0 2.5rem;
 }
 
-.skillStackSection {
+/* .skillStackSection {
   flex: 1;
   padding: 0 2.5rem;
-}
+} */
 
 .skillStackShowcase {
   grid-gap: 0.5rem;
@@ -178,11 +178,8 @@
   }
 
   .skillStackSection {
-    margin-top: 3rem;
-  }
-
-  .skillStackSection {
     padding: 0 0.5rem;
+    margin-top: 3rem;
   }
 
   .next {
