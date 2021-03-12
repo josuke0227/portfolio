@@ -2,6 +2,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import MainContents from "../components/MainContents";
 import NavBar from "../components/NavBar";
+import "../styles/normalize.css";
 
 export default function Home() {
   return (
