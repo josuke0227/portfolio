@@ -12,10 +12,10 @@
   padding: 0 2.5rem;
 }
 
-.skillStackSection {
+/* .skillStackSection {
   flex: 1;
   padding: 0 2.5rem;
-}
+} */
 
 .skillStackShowcase {
   grid-gap: 0.5rem;
@@ -163,28 +163,19 @@
   .contentsWrapper {
     flex-direction: column;
   }
-
-  .skillStackShowcase {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
 }
 
 @media only screen and (max-width: 425px) {
   .skillStackShowcase {
     grid-template-columns: repeat(38, auto);
   }
-
   .selfIntroduction {
     padding: 0;
   }
 
   .skillStackSection {
-    margin-top: 3rem;
-  }
-
-  .skillStackSection {
     padding: 0 0.5rem;
+    margin-top: 3rem;
   }
 
   .next {
