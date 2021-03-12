@@ -12,10 +12,10 @@
   padding: 0 2.5rem;
 }
 
-/* .skillStackSection {
+.skillStackSection {
   flex: 1;
   padding: 0 2.5rem;
-} */
+}
 
 .skillStackShowcase {
   grid-gap: 0.5rem;
@@ -167,19 +167,7 @@
 
 @media only screen and (max-width: 425px) {
   .skillStackShowcase {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    grid-template-columns: repeat(39, auto);
-=======
-    grid-gap: 5px;
-    display: grid;
-    grid-template-columns: repeat(39, auto);
-    grid-template-rows: repeat(35, auto);
->>>>>>> main
-=======
-    grid-template-columns: initial;
-    grid-template-rows: initial;
->>>>>>> parent of 42e8c8f... rinal
+    grid-template-columns: repeat(38, auto);
   }
   .selfIntroduction {
     padding: 0;
