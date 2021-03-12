@@ -1,15 +1,7 @@
 import Container from "./Container";
 import style from "../styles/ContactMe.module.css";
-import { useEffect, useState } from "react";
 
 export default function ContactMe() {
-  const [screenWidth, setScreenWidth] = useState(null);
-
-  useEffect(() => {
-    const currentWidth = document.documentElement.clientWidth;
-    setScreenWidth(currentWidth);
-  });
-
   return (
     <Container id="contactMe" lastPage>
       <h1>Contact Me</h1>
