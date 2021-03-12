@@ -167,7 +167,14 @@
 
 @media only screen and (max-width: 425px) {
   .skillStackShowcase {
+<<<<<<< HEAD
     grid-template-columns: repeat(39, auto);
+=======
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(39, auto);
+    grid-template-rows: repeat(35, auto);
+>>>>>>> main
   }
   .selfIntroduction {
     padding: 0;
