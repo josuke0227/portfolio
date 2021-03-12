@@ -168,6 +168,7 @@
 @media only screen and (max-width: 425px) {
   .skillStackShowcase {
 <<<<<<< HEAD
+<<<<<<< HEAD
     grid-template-columns: repeat(39, auto);
 =======
     grid-gap: 5px;
@@ -175,6 +176,10 @@
     grid-template-columns: repeat(39, auto);
     grid-template-rows: repeat(35, auto);
 >>>>>>> main
+=======
+    grid-template-columns: initial;
+    grid-template-rows: initial;
+>>>>>>> parent of 42e8c8f... rinal
   }
   .selfIntroduction {
     padding: 0;
