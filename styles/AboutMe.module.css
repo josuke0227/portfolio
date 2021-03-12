@@ -20,8 +20,8 @@
 .skillStackShowcase {
   grid-gap: 0.5rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-columns: repeat(80, auto);
+  grid-template-rows: repeat(35, auto);
 }
 
 .skillEvidencies {
@@ -41,7 +41,7 @@
   align-self: center;
   grid-column: 3 / span 2;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .skillText {
@@ -51,25 +51,55 @@
 .square {
   justify-self: center;
   align-self: center;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.squareCss {
-  justify-self: center;
-  align-self: center;
-  object-fit: contain;
-  width: 100%;
-  height: 70%;
+.html,
+.css {
+  grid-column: span 10;
+  grid-row: span 10;
 }
 
-.squareReact {
-  justify-self: center;
-  align-self: center;
-  object-fit: cover;
-  width: 100%;
-  height: 70%;
+.js {
+  grid-column: span 13;
+  grid-row: span 10;
+}
+
+.next {
+  grid-column: span 22;
+  grid-row: span 10;
+}
+
+.sass {
+  grid-column: span 16;
+  grid-row: 11 / span 12;
+}
+
+.react {
+  grid-column: span 14;
+  grid-row: 11 / span 14;
+}
+
+.node {
+  grid-column: span 35;
+  grid-row: 11 / span 10;
+}
+
+.reactBootstrap {
+  grid-column: span 16;
+  grid-row: 25 / span 10;
+}
+
+.styledComponents {
+  grid-column: span 14;
+  grid-row: 25 / span 10;
+}
+
+.mongoDb {
+  grid-column: span 25;
+  grid-row: 25 / span 10;
 }
 
 @keyframes in {
@@ -138,17 +168,38 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
+}
 
-  .twoSpans2 {
-    grid-column: 1 / span 2;
+@media only screen and (max-width: 425px) {
+  .skillStackShowcase {
+    grid-template-columns: initial;
+    grid-template-rows: initial;
   }
 
-  .img {
-    width: 200px;
-    height: 200px;
+  .selfIntroduction {
+    padding: 0;
   }
 
   .skillStackSection {
     margin-top: 3rem;
+  }
+
+  .skillStackSection {
+    padding: 0 0.5rem;
+  }
+
+  .next {
+    grid-column: 7 / span 22;
+    grid-row: 35 / span 10;
+  }
+
+  .node {
+    grid-column: 5 / span 30;
+    grid-row: 44 / span 5;
+  }
+
+  .mongoDb {
+    grid-column: span 38;
+    grid-row: 49 / span 10;
   }
 }
