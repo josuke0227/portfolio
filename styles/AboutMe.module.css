@@ -163,17 +163,14 @@
   .contentsWrapper {
     flex-direction: column;
   }
-
-  .skillStackShowcase {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-  }
 }
 
 @media only screen and (max-width: 425px) {
   .skillStackShowcase {
-    grid-template-columns: initial;
-    grid-template-rows: initial;
+    grid-gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(39, auto);
+    grid-template-rows: repeat(35, auto);
   }
 
   .selfIntroduction {
