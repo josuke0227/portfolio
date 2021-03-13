@@ -6,7 +6,7 @@ export default function ContactMe() {
     <Container id="contactMe" lastPage>
       <h1>Contact Me</h1>
       <div className={style.container}>
-        <h3 className="mb-small">You can contact me on...</h3>
+        <h3 className="mb">You can contact me on...</h3>
         <div className={style.card}>
           <a
             href="mailto:y.motosugi0227@gmail.com"

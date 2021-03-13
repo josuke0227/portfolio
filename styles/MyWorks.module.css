@@ -16,7 +16,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .card:nth-child(2) {
@@ -24,16 +23,18 @@
 }
 
 .img {
-  position: absolute;
-  max-width: 100%;
+  width: 400px;
   animation: mymove 1s infinite;
   padding: 8px;
-  border: 1px solid;
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+  background-color: var(--white);
 }
 
-.card:hover {
+.img:hover {
   transform: translateY(-3%);
   transition: transform 1s;
+  cursor: pointer;
 }
 
 .pagenationContainer {
@@ -96,4 +97,25 @@
   .pagenationContainer {
     margin-top: 1rem;
   }
+}
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  padding: 60px 30px;
+}
+
+.showcase {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+}
+
+.fasd {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
