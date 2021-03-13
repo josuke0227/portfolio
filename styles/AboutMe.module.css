@@ -172,4 +172,8 @@
   .img {
     width: 200px;
   }
+
+  .contentsWrapper {
+    padding-top: 5px;
+  }
 }
