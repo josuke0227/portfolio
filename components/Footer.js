@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer>
       <div className={style.wrapper}>
-        <div>Copyright ©{year} My Portfolio by Yosuke Motosugi.</div>
+        <span>Copyright ©{year} My Portfolio by Yosuke Motosugi.</span>
       </div>
     </footer>
   );

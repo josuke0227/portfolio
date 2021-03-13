@@ -50,8 +50,8 @@ ul {
   margin-left: 2.5rem;
 }
 
-h1 {
-  margin: 1rem;
+h2 {
+  margin-left: 1rem;
 }
 
 .mt-1 {
@@ -64,4 +64,10 @@ h1 {
 
 .px-2 {
   padding: 0 1rem;
+}
+
+@media only screen and (max-width: 425px) {
+  h2 {
+    margin: 0;
+  }
 }

@@ -57,7 +57,7 @@
   transform: rotate(180deg);
 }
 
-.thisAnchor:hover {
+.linkButton:hover {
   text-decoration: none;
 }
 

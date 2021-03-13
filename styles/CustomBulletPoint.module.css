@@ -1,0 +1,20 @@
+.wrapper {
+  display: flex;
+}
+
+.iconWrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.blueIcon {
+  color: var(--blue);
+}
+
+.blackIcon {
+  color: var(--black);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}

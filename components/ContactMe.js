@@ -4,7 +4,7 @@ import style from "../styles/ContactMe.module.css";
 export default function ContactMe() {
   return (
     <Container id="contactMe" lastPage>
-      <h1>Contact Me</h1>
+      <h2>Contact Me</h2>
       <div className={style.container}>
         <h3 className="mb">You can contact me on...</h3>
         <div className={style.card}>

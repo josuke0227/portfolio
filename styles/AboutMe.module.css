@@ -1,35 +1,42 @@
 .contentsWrapper {
   display: flex;
-  padding: 1rem;
   gap: 1rem;
+  padding: 1rem;
+}
+
+.leftPart {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  padding: 20px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+  background: var(--white);
+}
+
+.emphersize {
+  font-size: 2rem;
+}
+
+.button {
+  color: var(--blue);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 .img {
   border-radius: inherit;
   align-self: center;
+  width: 300px;
 }
 
-.selfIntroduction {
+.rightPart {
   flex: 1;
-  padding: 20px;
   display: flex;
-  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
-  border-radius: 25px;
-  gap: 1rem;
-  grid-gap: 1rem;
-  background: var(--white);
-}
-
-.skillStackSection {
-  flex: 1;
-  padding: 0 2.5rem;
-}
-
-.skillStackShowcase {
-  grid-gap: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(80, auto);
-  grid-template-rows: repeat(35, auto);
+  flex-direction: column;
 }
 
 .skillEvidencies {
@@ -38,22 +45,6 @@
   border-radius: 25px;
   padding: 20px;
   background-color: var(--white);
-}
-
-.twoSpans1 {
-  justify-self: center;
-  align-self: center;
-  grid-column: 1 / span 2;
-  width: 100%;
-  object-fit: contain;
-}
-
-.twoSpans2 {
-  justify-self: center;
-  align-self: center;
-  grid-column: 3 / span 2;
-  width: 100%;
-  object-fit: contain;
 }
 
 .skillText {
@@ -159,15 +150,6 @@
   margin-top: 0.25rem;
 }
 
-.button {
-  color: var(--blue);
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
 .button:focus {
   outline: none;
 }
@@ -179,30 +161,15 @@
 }
 
 @media only screen and (max-width: 425px) {
-  .skillStackShowcase {
-    grid-template-columns: repeat(38, auto);
+  .leftPart {
+    flex-direction: column-reverse;
   }
+
   .selfIntroduction {
     padding: 0;
   }
 
-  .skillStackSection {
-    padding: 0 0.5rem;
-    margin-top: 3rem;
-  }
-
-  .next {
-    grid-column: 7 / span 22;
-    grid-row: 35 / span 10;
-  }
-
-  .node {
-    grid-column: 5 / span 30;
-    grid-row: 44 / span 5;
-  }
-
-  .mongoDb {
-    grid-column: span 38;
-    grid-row: 49 / span 10;
+  .img {
+    width: 200px;
   }
 }

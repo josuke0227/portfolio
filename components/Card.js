@@ -1,4 +1,4 @@
-import style from "../styles/MyWorks.module.css";
+import style from "../styles/Card.module.css";
 
 export default function Card({ work, handleImageClick }) {
   return (

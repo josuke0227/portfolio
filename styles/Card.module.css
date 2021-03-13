@@ -1,0 +1,20 @@
+.img {
+  width: 400px;
+  animation: mymove 1s infinite;
+  padding: 8px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 50%);
+  border-radius: 25px;
+  background-color: var(--white);
+}
+
+.img:hover {
+  transform: translateY(-3%);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 425px) {
+  .img {
+    width: 250px;
+  }
+}

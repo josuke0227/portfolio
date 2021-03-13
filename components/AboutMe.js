@@ -2,7 +2,6 @@ import Container from "./Container";
 import style from "../styles/AboutMe.module.css";
 import { useState } from "react";
 import MyFeatures from "./MyFeatures";
-import SkillStack from "./SkillStack";
 import Skills from "./Skills";
 import SkillEvidences from "./SkillEvidences";
 
@@ -11,12 +10,12 @@ export default function AboutMe() {
 
   return (
     <Container id="aboutMe">
-      <h1>About Me</h1>
+      <h2>About Me</h2>
       <div className={style.contentsWrapper}>
-        <div className={style.selfIntroduction}>
+        <div className={style.leftPart}>
           <article>
             <p>
-              <strong style={{ fontSize: "2rem" }}>F</strong>irst of all, thank
+              <strong className={style.emphersize}>F</strong>irst of all, thank
               you for checking out my portfolio! My name is Yosuke Motosugi from
               Japan, currently living in NSW Australia.
             </p>
@@ -28,11 +27,9 @@ export default function AboutMe() {
             </button>
             {showBackground && <MyFeatures />}
           </article>
-          <img className={style.img} src="/me.png" height="300px" />
+          <img className={style.img} src="/me.png" />
         </div>
-        {/* <SkillStack /> */}
-        {/* TODO// fix inline styling */}
-        <div style={{ display: "flex", flexDirection: "column", flex: "1" }}>
+        <div className={style.rightPart}>
           <Skills />
           <SkillEvidences />
         </div>

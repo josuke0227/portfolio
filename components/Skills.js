@@ -33,10 +33,3 @@ export default function Skills() {
     </article>
   );
 }
-
-/* <div>CSS</div>
-        <div>JavaScript</div>
-        <div>React</div>
-        <div>Redux</div>
-        <div>Node.js</div>
-        <div>MongoDB</div> */

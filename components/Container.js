@@ -1,9 +1,9 @@
 import style from "../styles/Container.module.css";
 
-export default function Container({ children, lastPage, id, withLogo }) {
+export default function Container({ children, lastPage, id }) {
   return (
-    <div id={id} className={lastPage ? style.lastPage : style.common}>
+    <section id={id} className={lastPage ? style.lastPage : style.common}>
       {children}
-    </div>
+    </section>
   );
 }

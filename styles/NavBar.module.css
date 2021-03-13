@@ -2,9 +2,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  height: 7vh;
+  height: 50px;
   min-width: 100vw;
-  /* border-bottom: 1px solid var(--black); */
   box-shadow: 0 0 15px rgb(0 0 0 / 50%);
   background-color: var(--white);
   position: fixed;
